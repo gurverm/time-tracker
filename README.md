@@ -12,7 +12,6 @@
 
 This Time Tracker app is a secure and easy web application built using the MERN stack. It is designed to allow users to keep track of the hours spent working on a given project on a given date.
 
-
 ## Features
 
 - Integration of Picovoice Eagle for Web
@@ -30,7 +29,7 @@ To start using the Time Tracker app, follow these steps:
 
 ## Demo
 
-![VoiceJoy Eagle Demo](./demo/web/assets/images/vj-eagle.gif)
+![Time Tracker Demo](./assets/images/time-tracker.gif)
 
 ## Technologies Used
 
@@ -38,7 +37,6 @@ To start using the Time Tracker app, follow these steps:
 - Express
 - React
 - Nodejs
-
 
 ## License
 
