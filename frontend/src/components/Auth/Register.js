@@ -14,7 +14,7 @@ const Register = () => {
         username,
         password,
       });
-      history("/add-entry");
+      history("/entry");
     } catch (error) {
       if (error.response || error.response.status === 400) {
         console.log("hi")
