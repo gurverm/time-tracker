@@ -3,6 +3,7 @@ const jwt = require("jsonwebtoken");
 const User = require("../models/Users");
 const router = express.Router();
 
+// handles new user registration -- parses body and saves to database
 router.post("/register", async (req, res) => {
   const { username, password } = req.body;
   try {
@@ -17,6 +18,7 @@ router.post("/register", async (req, res) => {
   }
 });
 
+// compares entered credentials to database returning the respective output
 router.post("/login", async (req, res) => {
   const { username, password } = req.body;
   try {

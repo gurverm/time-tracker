@@ -2,8 +2,7 @@ const express = require('express');
 const TimeEntry = require('../models/TimeEntry');
 const router = express.Router();
 
-// Middleware to verify token could be added here
-
+// router handler for new entry post requests 
 router.post('/', async (req, res) => {
   const { user, project, taskDescription, hours } = req.body;
   const newEntry = new TimeEntry({ user, project, taskDescription, hours });
@@ -15,6 +14,7 @@ router.post('/', async (req, res) => {
   }
 });
 
+// router handler for post reading
 router.get('/', async (req, res) => {
   try {
     const entries = await TimeEntry.find();
